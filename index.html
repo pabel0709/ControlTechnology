@@ -11,12 +11,14 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <title>Control Technology</title>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="80" >
+
+<!-- required for dynamic scrolling -->
+
   <!--  navbar-->
-  <!-- Image and text -->
-  <nav class="navbar fixed-top navbar-expand-md navbar-dark " style="background:rgba(0,0,0, 0.7); border-bottom: solid 1px white;">
-    <a class="navbar-brand" href="#">
-      <img src="img/database.png" width="25" height="25" class="d-inline-block align-top py-0" alt=""><span class="mx-2 text-white py-0">Control Technology</span>
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark " style="background:rgba(0,0,0); border-bottom: solid 1px white;">
+    <a class="navbar-brand js-scroll-trigger" href="#home">
+      <img src="img/database.png" width="25" height="25" class="d-inline-block align-top " alt=""><span class="mx-2 text-white ">Control Technology</span>
     </a>
     <nav class="navbar navbar-toggleable-sm ml-auto">
       <div class="container">
@@ -25,184 +27,169 @@
         </button>
         <div class="collapse navbar-collapse " id="mainNav">
           <div class="navbar-nav ">
-            <a class="nav-item nav-link js-scroll-trigger py-0" href="#home">Home</a>
-            <a class="nav-item nav-link js-scroll-trigger py-0"href="#about">O NAS</a>
-            <a class="nav-item nav-link js-scroll-trigger py-0" href="#services">USŁUGI</a>
-            <a class="nav-item nav-link js-scroll-trigger py-0" href="#contact" >KONTAKT</a>
-            <a class="nav-item nav-link fa fa-phone-square py-0" href="#" data-toggle="modal" data-target="#phone" style="margin:auto;"></a>
-            <a class="nav-item nav-link alert-link fa fa-location-arrow py-0" href="#"  data-toggle="modal" data-target="#location" style="margin:auto;"></a>
+            <a class="nav-item nav-link js-scroll-trigger "href="#home"><i class="fas fa-home"></i></a>
+            <a class="nav-item nav-link js-scroll-trigger "href="#about">O NAS</a>
+            <a class="nav-item nav-link js-scroll-trigger " href="#services">USŁUGI</a>
+            <a class="nav-item nav-link js-scroll-trigger " href="#contact" >KONTAKT</a>
+            <a class="nav-item nav-link fa fa-phone-square " href="#" data-toggle="modal" data-target="#phone" style="margin:auto;"></a>
+            <a class="nav-item nav-link alert-link fa fa-location-arrow " href="#"  data-toggle="modal" data-target="#location" style="margin:auto;"></a>
           </div>
         </div>
       </div>
     </nav>
-
   </nav>
+  <!-- location dialog box  -->
+  <div class="modal fade" id="location" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="opacity: 0.9;">
+        <div class="modal-header">
+          <h4>Lokalizacja</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
 
-<div class="modal fade" id="location" role="dialog">
-  <div class="modal-dialog modal-lg">
+        <div class="modal-body">
+          <h2 class="text-center display-4"> Tarnow, Lesser Poland Voivodeship, Poland</h2>
+        </div>
 
-    <!-- Modal content-->
-    <div class="modal-content" style="opacity: 0.9;">
-      <div class="modal-header">
-        <h4>Lokalizacja</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="modal-footer">
+          <a class="nav-link" href="#"><i class="fas fa-map-marker-alt nav-link"></i></a>
+          <a class="nav-link" href="#"><i class="fas fa-map-marker-alt nav-link"></i></a>
+          <a class="nav-link" href="#"><i class="fas fa-map-marker-alt nav-link"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- contact dialog box  -->
+  <div class="modal fade" id="phone" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="opacity: 0.9;">
+        <div class="modal-header">
+          <h4>Kontakt</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <h2 class="text-center"><i class="fas fa-phone"></i> <span>123-456-889</span></h2>
+          <h2 class="text-center"><i class="fas fa-phone"></i> <span>123-456-889</span></h2>
+          <h2 class="text-center"><i class="fas fa-phone"></i> <span>123-456-889</span></h2>
+          <h2 class="text-center"><i class="fas fa-phone"></i> <span>123-456-889</span></h2>
+        </div>
+        <div class="modal-footer"></div>
       </div>
-      <div class="modal-body">
-        <h2 class="text-center display-4"> Tarnow, Lesser Poland Voivodeship, Poland</h2>
+    </div>
+  </div>
+
+<!-- home element with picture  -->
+
+  <div class="jumbotron jumbotron-fluid bg-info text-white text-center my-0" style="background-image: url(img/2000_5a255333b7f02.jpg) ; height: 100vh; " id="home">
+    <div class="container" style="position:absolute; top:50%; left:50%; transform: translate(-50%,-50%);">
+      <h1 class="display-3 font-weight-bold ">Witamy w Control Technology!!</h1>
+      <h2 class="display-6 ">Zapoznaj się z naszą ofertą</h2>
+      <button class="btn btn-danger">KATALOG</button>
+    </div>
+  </div>
+
+<!-- About section  -->
+  <div class="section bg-light" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="display-4 text-center">O NAS</h1>
+          <hr class="divider text-dark"/>
+          <p class="lead">
+            I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
+          </p>
+        </div>
       </div>
-      <div class="modal-footer">
-        <a class="fas fa-map-marker-alt nav-link" href="#"></a>
-        <a class="fas fa-map-marker-alt nav-link" href="#"></a>
-        <a class="fas fa-map-marker-alt nav-link" href="#"></a>
+    </div>
+  </div>
+
+<!-- Services section  -->
+  <div class="section" id="services" >
+    <div class="container">
+      <div class="header">
+        <h1 class="display-4 text-center">USŁUGI</h1>
+        <hr class="divider text-dark"/>
       </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center">
+              <img src="/img/node.png" class="card-img-top"/>
+              <div class="card-block">
+                <h3 class="card-title my-5">USŁUGA 1</h3>
+                <button class="btn btn-info ">DOWIEDZ SIĘ WIECEJ</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center">
+              <img src="/img/node.png" class="card-img-top"/>
+              <div class="card-block">
+                <h3 class="card-title my-5">USŁUGA 1</h3>
+                <button class="btn btn-info ">DOWIEDZ SIĘ WIECEJ</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center">
+              <img src="/img/node.png" class="card-img-top"/>
+              <div class="card-block">
+                <h3 class="card-title my-5">USŁUGA 1</h3>
+                <button class="btn btn-info ">DOWIEDZ SIĘ WIECEJ</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center">
+              <img src="/img/node.png" class="card-img-top"/>
+              <div class="card-block">
+                <h3 class="card-title my-5">USŁUGA 1</h3>
+                <button class="btn btn-info ">DOWIEDZ SIĘ WIECEJ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- contact section -->
+  <div class="section"  id="contact">
+    <div class="container">
+      <h1 class="display-4 text-center">KONTAKT</h1>
+      <hr class="divider text-dark"/>
+      <p class="lead">
+        I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
+      </p>
 
     </div>
-
   </div>
 
-</div>
-
-<div class="modal fade" id="phone" role="dialog">
-  <div class="modal-dialog modal-lg">
-
-    <!-- Modal content-->
-    <div class="modal-content" style="opacity: 0.9;">
-      <div class="modal-header">
-        <h4>Kontakt</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-      </div>
-      <div class="modal-body">
-        <h2 class="text-center"><i class="fas fa-phone"></i> <span>123-456-889</span></h2>
-        <h2 class="text-center"><i class="fas fa-phone"></i> <span>123-456-889</span></h2>
-        <h2 class="text-center"><i class="fas fa-phone"></i> <span>123-456-889</span></h2>
-        <h2 class="text-center"><i class="fas fa-phone"></i> <span>123-456-889</span></h2>
-      </div>
-      <div class="modal-footer">
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-
-<div class="jumbotron jumbotron-fluid bg-info text-white text-center my-0" style="background-image: url(img/2000_5a255333b7f02.jpg) ; height: 100vh; position: relative;" id="home">
-  <div class="container" style="position:absolute; top:50%; left:50%; transform: translate(-50%,-50%);">
-    <h1 class="display-3 font-weight-bold ">Witamy w Control Technology!!</h1>
-    <h2 class="display-6 ">Zapoznaj się z naszą ofertą</h2>
-    <button class="btn btn-danger">KATALOG</button>
-  </div>
-</div>
-
-<div class="section" id="about">
-  <div class="container my-5">
-    <h1 class="display-4 text-center">O NAS</h1>
-    <hr class="divider text-dark"/>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-  </div>
-
-<div class="section" id="services">
-  <div class="container my-5">
-    <h1 class="display-4 text-center">USŁUGI</h1>
-    <hr class="divider text-dark"/>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-  </div>
-
-<div class="section" id="contact">
-  <div class="container my-5">
-    <h1 class="display-4 text-center">KONTAKT</h1>
-    <hr class="divider text-dark"/>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-    <p class="lead">
-      I am a paragraph. To edit me, enter the PAGES section in your management panel. There is an "Edit" link next to each of your pages, which allows you to implement different changes, depending on the page type. For example, you can add or edit text in pages like Services, add or delete pictures in a Gallery, or update your details in the Contact page.
-    </p>
-  </div>
-
-  <!-- Modal -->
-
-
-
-  <!--  jumbotron with background picture-->
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-</script>
-
-<script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script></script>
+    <script src="piter/jquery/jquery.min.js"></script>
+    <script src="piter/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
+    <script src="piter/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
-</body>
-</html>
+  </body>
+  </html>
+
+  <style>
+  .section {
+    padding: 150px 0;
+  }
+  #services{
+    background: lightgray;
+  }
+  .card-block{
+    background: lightgray;
+  }
+  .card{
+    border:none;
+  }
+</style>
