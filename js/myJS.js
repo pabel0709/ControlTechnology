@@ -3,10 +3,6 @@ function myMap() {
   var map = new google.maps.Map(
       document.getElementById('googleMap'), {zoom: 18, center: loc});
 
-  var infowindow = new google.maps.InfoWindow({content: contentString});
-  marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
 }
 
 window.onscroll = function() {scrollFunction()};
