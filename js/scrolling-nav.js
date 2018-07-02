@@ -14,4 +14,17 @@
       }
     }
   });
+
 })(jQuery); // End of use strict
+$(window).scroll(function(){
+  if($(this).scrollTop()>300) $('.up').fadeIn(1000);
+  else $('.up').fadeOut(1000);
+});
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 50) {
+    $('nav').removeClass('navbar-shrink');
+  } else {
+    $('nav').addClass('navbar-shrink');
+  }
+});

@@ -9,8 +9,10 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if($(window).scrollTop() + $(window).height() > $(document).height()-20) {
- document.getElementById("navbar").style.top = "-60px";
+ document.getElementById("navbar-top").style.top = "-60px";
+ // $('nav').addClass('navbar-shrink');
 }else {
- document.getElementById("navbar").style.top = "-0";
+ document.getElementById("navbar-top").style.top = "-0";
 }
+
 }

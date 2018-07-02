@@ -19,7 +19,7 @@
 <!-- required for dynamic scrolling -->
 
   <!--  navbar-->
-  <nav class="navbar fixed-top navbar-expand-md navbar-dark" id="navbar">
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark navbar-shrink" id="navbar-top">
     <a class="navbar-brand js-scroll-trigger" href="#home">
       <img src="img/database.png" width="25" height="25" class="d-inline-block align-top " alt=""><span class="mx-2 text-white ">Control Technology</span>
     </a>
@@ -32,6 +32,7 @@
             <a class="nav-item nav-link js-scroll-trigger text-center"href="#about">O NAS</a>
             <a class="nav-item nav-link js-scroll-trigger text-center" href="#services">USŁUGI</a>
             <a class="nav-item nav-link js-scroll-trigger text-center" href="#contact" >KONTAKT</a>
+            <a class="nav-item nav-link js-scroll-trigger text-center" href="#map" >MAPA</a>
             <a class="nav-item nav-link  text-center" href="#" data-toggle="modal" data-target="#phone"><i class="fas fa-phone-square"></i></a>
             <a class="nav-item nav-link alert-link  text-center" href="#"  data-toggle="modal" data-target="#location"><i class="fas fa-map-marked-alt"></i></i></a>
           </div>
@@ -42,11 +43,11 @@
     <div class="modal-dialog modal-dialog-centered modal-lg" >
       <div class="modal-content">
         <div class="modal-header">
-          <h4>33-100 Tranów, ul. Kochanowskiego 39B</h4>
+          <h5>Adres siedziby:</h5>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <div id="googleMap"></div>
+          <h4>33-100 Tranów, ul. Kochanowskiego 39B</h4>
         </div>
 
         <div class="modal-footer">
@@ -89,7 +90,7 @@
   </div>
 
 <!-- About section  -->
-  <div class="section bg-light" id="about">
+  <div class="section" id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
@@ -160,18 +161,37 @@
       <hr class="divider text-dark"/>
       <div class="row">
         <div class="col-sm-12 col-lg-6 " >
-          <h3 class="display-5 text-center ">Napisz do nas Maila</h3>
-          <h4 class="display-6 text-center py-2"><i class="far fa-envelope text-danger"></i> <a class="text-info" href="#">mail@int-technics.pl</a></h4>
-          <h4 class="display-6 text-center py-2"><i class="far fa-envelope text-danger"></i> <a class="text-info" href="#">mail@int-technics.pl</a></h4>
+
+          <h3 class="display-5 text-center mb-3">Napisz do nas Maila</h3>
+          <div class="row my-2">
+            <div class="col-12">
+              <h4 class="display-6 text-center "><i class="far fa-envelope text-danger"></i> <a class="text-info" href="#">mail@int-technics.pl</a></h4>
+            </div>
+          </div>
+          <div class="row my-2">
+            <div class="col-12">
+              <h4 class="display-6 text-center "><i class="far fa-envelope text-danger"></i> <a class="text-info" href="#">mail@int-technics.pl</a></h4>
+            </div>
+          </div>
+          <div class="row my-2">
+            <div class="col-12">
+              <h4 class="display-6 text-center "><i class="far fa-envelope text-danger"></i> <a class="text-info" href="#">mail@int-technics.pl</a></h4>
+            </div>
+          </div>
+          <div class="row my-2">
+            <div class="col-12">
+              <h4 class="display-6 text-center "><i class="far fa-envelope text-danger"></i> <a class="text-info" href="#">mail@int-technics.pl</a></h4>
+            </div>
+          </div>
         </div>
         <div class="col-sm-12 col-lg-6">
           <h3 class="display-5 text-center mb-3">Zadzwoń do nas</h3>
-          <div class="row ">
+          <div class="row my-2">
             <div class="col-sm-12 col-md-5 text-center">
               <h5 class="text-md-left"><i class="fas fa-users"></i> Dzial handlowy:</h5>
             </div>
             <div class="col-sm-12 text-center col-md-7">
-              <h4 class="text-info">123-456-789  <i class="fas fa-mobile "></i></h4>
+              <h4 class="text-info">123-456-789  </h4>
             </div>
           </div>
           <div class="row my-2">
@@ -179,7 +199,7 @@
               <h6 class="text-md-left"><i class="fas fa-truck"></i> Dzial logistyki i zakupów:</h6>
             </div>
             <div class="col-sm-12 text-center col-md-7">
-              <h4 class="text-info">123-456-789  <i class="fas fa-mobile "></i></h4>
+              <h4 class="text-info">123-456-789  </h4>
             </div>
           </div>
           <div class="row my-2">
@@ -187,28 +207,36 @@
               <h5 class="text-md-left"><i class="fas fa-laptop"></i> Dzial IT:</h5>
             </div>
             <div class="col-sm-12 text-center col-md-7">
-              <h4 class="text-info">123-456-789  <i class="fas fa-mobile "></i></h4>
+              <h4 class="text-info">123-456-789  </h4>
             </div>
           </div>
-          <div class="row my-2">
+          <div class="row">
             <div class="col-sm-12 text-center col-md-5">
               <h5 class="text-md-left"><i class="fas fa-glasses"></i> Sekretariat:</h5>
             </div>
             <div class="col-sm-12 text-center col-md-7">
-              <h4 class="text-info">123-456-789  <i class="fas fa-phone"></i></h4>
+              <h4 class="text-info"> 123-456-789  </h4>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="section" id="map" style="padding:0 !important">
 
+      <div id="googleMap"></div>
+
+
+  </div>
+
+<a class="js-scroll-trigger " href="#home"><button class="btn bg-dark up"><i class="fas fa-arrow-up text-white"></i></button></a>
   <footer>
     <nav class="nav justify-content-center navbar-dark " id="navbar-bottom">
       <a class="nav-item nav-link js-scroll-trigger text-center text-center bg-se"href="#home" ><i class="fas fa-home"></i></a>
       <a class="nav-item nav-link js-scroll-trigger text-center"href="#about">O NAS</a>
       <a class="nav-item nav-link js-scroll-trigger text-center" href="#services">USŁUGI</a>
       <a class="nav-item nav-link js-scroll-trigger text-center" href="#contact" >KONTAKT</a>
+      <a class="nav-item nav-link js-scroll-trigger text-center" href="#map" >MAPA</a>
       <a class="nav-item nav-link  text-center" href="#" data-toggle="modal" data-target="#phone"><i class="fas fa-phone-square"></i></a>
       <a class="nav-item nav-link alert-link  text-center" href="#"  data-toggle="modal" data-target="#location"><i class="fas fa-map-marked-alt"></i></a>
       </nav>
