@@ -1,8 +1,9 @@
 .section {
-  padding: 150px 0;
+  padding: 100px 0;
 }
 #about{
   background: lightgray  ;
+
 }
 #services{
   background: Moccasin;
@@ -86,4 +87,15 @@ nav{
 
 .carousel-control-prev: hover{
   background-color: red;
+}
+
+.abcd{
+  visibility: hidden;
+  opacity: 0;
+  transition:visibility 1.5s linear,opacity 2s linear;
+
+}
+.visible{
+  visibility:visible;
+    opacity:1;
 }

@@ -21,6 +21,9 @@ $(window).scroll(function(){
   else $('.up').fadeOut(1000);
 });
 
+
+
+
 $(window).scroll(function() {
   if ($(this).scrollTop() > 50) {
     $('nav').removeClass('navbar-shrink');
@@ -28,3 +31,23 @@ $(window).scroll(function() {
     $('nav').addClass('navbar-shrink');
   }
 });
+// $(window).scroll(function() {
+//   if ($(this).scrollTop() > 300) {
+//     $('div').removeClass('abcd');
+//   } else {
+//     $('div .aa').addClass('abcd');
+//   }
+// });
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 300) {
+    $('div').addClass('visible');
+  } else {
+    $('div .aa').removeClass('visible');
+  }
+});
+
+// $(window).scroll(function() {
+//   if ($(this).scrollTop() < 400) {
+//     $('aa').addClass('abcd');
+//   }
+// });
