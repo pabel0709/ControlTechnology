@@ -32,7 +32,7 @@
             <a class="nav-item nav-link js-scroll-trigger text-center"href="#about">O NAS</a>
             <a class="nav-item nav-link js-scroll-trigger text-center" href="#services">USŁUGI</a>
             <a class="nav-item nav-link js-scroll-trigger text-center" href="#contact" >KONTAKT</a>
-            <a class="nav-item nav-link js-scroll-trigger text-center" href="#map" >MAPA</a>
+            <a class="nav-item nav-link js-scroll-trigger text-center" href="#bottomOfPage" >MAPA</a>
             <a class="nav-item nav-link  text-center" href="#" data-toggle="modal" data-target="#phone"><i class="fas fa-phone-square"></i></a>
             <a class="nav-item nav-link text-center" href="#"  data-toggle="modal" data-target="#location"><i class="fas fa-map-marked-alt"></i></i></a>
           </div>
@@ -118,7 +118,7 @@
               <img src="img/node.png" class="card-img-top"/>
               <div class="card-block">
                 <h3 class="card-title my-5">USŁUGA 1</h3>
-                <button class="btn btn-info ">DOWIEDZ SIĘ WIECEJ</button>
+                <button class="btn btn-info m-2" data-toggle="modal" data-target="#usluga_1">DOWIEDZ SIĘ WIECEJ</button>
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@
               <img src="img/node.png" class="card-img-top"/>
               <div class="card-block">
                 <h3 class="card-title my-5">USŁUGA 2</h3>
-                <button class="btn btn-info ">DOWIEDZ SIĘ WIECEJ</button>
+                <button class="btn btn-info m-2"data-toggle="modal" data-target="#usluga_2">DOWIEDZ SIĘ WIECEJ</button>
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@
               <img src="img/node.png" class="card-img-top"/>
               <div class="card-block">
                 <h3 class="card-title my-5">USŁUGA 3</h3>
-                <button class="btn btn-info ">DOWIEDZ SIĘ WIECEJ</button>
+                <button class="btn btn-info m-2" data-toggle="modal" data-target="#usluga_3">DOWIEDZ SIĘ WIECEJ</button>
               </div>
             </div>
           </div>
@@ -145,13 +145,84 @@
               <img src="img/node.png" class="card-img-top"/>
               <div class="card-block">
                 <h3 class="card-title my-5">USŁUGA 4</h3>
-                <button class="btn btn-info ">DOWIEDZ SIĘ WIECEJ</button>
+                <button class="btn btn-info m-2" data-toggle="modal" data-target="#usluga_4">DOWIEDZ SIĘ WIECEJ</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Usluga 1 dialog box  -->
+    <div class="modal fade" id="usluga_1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Usluga 1</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Opis 1
+            </p>
+          </div>
+          <div class="modal-footer"> footer 1</div>
+        </div>
+      </div>
+    </div>
+    <!-- Usluga 2 dialog box  -->
+    <div class="modal fade" id="usluga_2" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Usluga 2</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Opis 2
+            </p>
+          </div>
+          <div class="modal-footer"> footer 2</div>
+        </div>
+      </div>
+    </div>
+    <!-- Usluga 3 dialog box  -->
+    <div class="modal fade" id="usluga_3" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Usluga 3</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Opis 3
+            </p>
+          </div>
+          <div class="modal-footer"> footer 3</div>
+        </div>
+      </div>
+    </div>
+    <!-- Usluga 4 dialog box  -->
+    <div class="modal fade" id="usluga_4" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Usluga 4</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Opis 4
+            </p>
+          </div>
+          <div class="modal-footer"> footer 4</div>
+        </div>
+      </div>
+    </div>
+
+
+
   </div>
 
 <!-- contact section -->
@@ -223,26 +294,19 @@
     </div>
   </div>
   <div class="section" id="map" style="padding:0 !important">
-
       <div id="googleMap"></div>
-
-
   </div>
 
-
-  <footer class="footer p-3 bg-danger text-white">
+  <footer class="footer p-3 bg-danger text-white" id="bottomOfPage">
     <div class="row" >
       <div class="col-sm-12 col-lg-7 text-center">
-        <div class="container">
-          <p class="lead tex-center">
+          <p class="lead m-0 tex-center">
               Control Technology Sp. z o.o.</br>
               ul. Kochanowskiego 39B 33-100 Tarnów, Poland</br>
               int-technics.pl   sensorstrade.com   plc-trade.com</br>
               VAT PL9930606747   </br>
               REGON 121113615   KRS 0000349516   BDO 000013102
           </p>
-        </div>
-
       </div>
       <div class="col-sm-12 col-lg-5 text-center">
         <nav class="navbar navbar-expand navbar-dark bg-danger justify-content-center" id="navbar-bottom">
@@ -253,16 +317,13 @@
                   <a class="nav-item nav-link js-scroll-trigger text-center" href="#contact" >KONTAKT</a>
                   <a class="nav-item nav-link  text-center" href="#" data-toggle="modal" data-target="#phone"><i class="fas fa-phone-square"></i></a>
                   <a class="nav-item nav-link text-center" href="#"  data-toggle="modal" data-target="#location"><i class="fas fa-map-marked-alt"></i></i></a>
-
               </div>
         </nav>
       </div>
-
     </div>
-
   </footer>
+  <a class="js-scroll-trigger " href="#home"><button class="btn bg-dark up"><i class="fas fa-arrow-up text-white"></i></button></a>
 
-<a class="js-scroll-trigger " href="#home"><button class="btn bg-dark up"><i class="fas fa-arrow-up text-white"></i></button></a>
     <script src="js/myJS.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -274,11 +335,8 @@
     <!-- Custom JavaScript  -->
     <script src="js/scrolling-nav.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmaTpGyosHnBWtBhIeqAjuvag-XI3ztUc&callback=myMap"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> -->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> -->
 
-    <script>
-
-</script>
 
   </body>
   </html>
