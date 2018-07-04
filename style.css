@@ -1,5 +1,9 @@
+/* body{
+  overflow: hidden !important;
+} */
 .section {
   padding: 150px 0;
+  border-bottom: solid 2px darkgray;
 }
 #about{
   background: gray  ;
@@ -61,7 +65,7 @@ nav{
 
 #googleMap{
   width:100%;
-  height: 550px;
+  height: 100vh;
 }
 .navbar-shrink{
   min-height: 35px;
@@ -114,8 +118,16 @@ nav{
   opacity: 0;
   transition:visibility 1.5s linear,opacity 1.5s linear;
 }
+.hiddHome{
+  visibility: hidden;
+  opacity: 0;
+  transition:visibility 1.5s linear,opacity 1.5s linear;
+}
 
 .visible{
   visibility:visible;
     opacity:1;
+}
+.home{
+  transition:visibility 1.5s linear,opacity 1.5s linear;
 }
