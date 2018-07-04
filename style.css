@@ -1,8 +1,8 @@
 .section {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 #about{
-  background: lightgray  ;
+  background: gray  ;
 
 }
 #services{
@@ -89,12 +89,32 @@ nav{
   background-color: red;
 }
 
-.abcd{
+.hiddAbout {
   visibility: hidden;
   opacity: 0;
-  transition:visibility 1.5s linear,opacity 2s linear;
-
+  transition:visibility 1.5s linear,opacity 1.5s linear;
 }
+.hiddServices{
+  visibility: hidden;
+  opacity: 0;
+  transition:visibility 1.5s linear,opacity 1.5s linear;
+}
+.hiddGallery{
+  visibility: hidden;
+  opacity: 0;
+  transition:visibility 1.5s linear,opacity 1.5s linear;
+}
+.hiddContact{
+  visibility: hidden;
+  opacity: 0;
+  transition:visibility 1.5s linear,opacity 1.5s linear;
+}
+.hiddMap{
+  visibility: hidden;
+  opacity: 0;
+  transition:visibility 1.5s linear,opacity 1.5s linear;
+}
+
 .visible{
   visibility:visible;
     opacity:1;
