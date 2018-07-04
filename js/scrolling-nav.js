@@ -21,9 +21,7 @@ $(window).scroll(function(){
   else $('.up').fadeOut(1000);
 });
 
-
-
-
+// navbar shrinking while scrolling down
 $(window).scroll(function() {
   if ($(this).scrollTop() > 50) {
     $('nav').removeClass('navbar-shrink');
@@ -31,13 +29,7 @@ $(window).scroll(function() {
     $('nav').addClass('navbar-shrink');
   }
 });
-// $(window).scroll(function() {
-//   if ($(this).scrollTop() > 300) {
-//     $('div').removeClass('abcd');
-//   } else {
-//     $('div .aa').addClass('abcd');
-//   }
-// });
+
 var homeHeight = $("#home").innerHeight();
 var aboutHeight = $("#about").innerHeight();
 var servicesHeight = $("#services").innerHeight();
@@ -46,6 +38,17 @@ var contactHeight = $("#contact").innerHeight();
 var mapHeight = $("#map").innerHeight();
 var navHeight = $('nav').innerHeight();
 
+// Home section animation
+$(window).scroll(function() {
+  if ($(this).scrollTop() >homeHeight- navHeight) {
+    $('div .home').removeClass('visible');
+    $('div .home').addClass('hiddHome');
+  } else if ($(this).scrollTop() == 0){
+    $('div .home').removeClass('hiddHome');
+  }
+});
+
+// About section animation
 $(window).scroll(function() {
   if ($(this).scrollTop()> (homeHeight -navHeight)*0.5) {
     $('div .hiddAbout').addClass('visible');
@@ -54,7 +57,7 @@ $(window).scroll(function() {
   }
 });
 
-
+// Services section animation
 $(window).scroll(function() {
   if ($(this).scrollTop()  > homeHeight + (aboutHeight*0.5) -navHeight) {
     $('div .hiddServices').addClass('visible');
@@ -63,7 +66,7 @@ $(window).scroll(function() {
   }
 });
 
-
+// Gallery section animation
 $(window).scroll(function() {
   if ($(this).scrollTop() > homeHeight + aboutHeight + (servicesHeight*0.5) -navHeight) {
     $('div .hiddGallery').addClass('visible');
@@ -71,6 +74,8 @@ $(window).scroll(function() {
     $('div .hiddGallery').removeClass('visible');
   }
 });
+
+// Contact section animation
 $(window).scroll(function() {
   if ($(this).scrollTop() > homeHeight + aboutHeight + servicesHeight + (galleryHeight*0.5)  -navHeight) {
     $('div .hiddContact').addClass('visible');
@@ -78,20 +83,12 @@ $(window).scroll(function() {
     $('div .hiddContact').removeClass('visible');
   }
 });
+
+// Map section animation
 $(window).scroll(function() {
   if ($(this).scrollTop() > homeHeight + aboutHeight + servicesHeight + galleryHeight + (contactHeight*0.5) -navHeight) {
     $('div .hiddMap').addClass('visible');
   } else if ($(this).scrollTop() == 0) {
     $('div .hiddMap').removeClass('visible');
-  }
-});
-$(window).scroll(function() {
-
-  if ($(this).scrollTop() >homeHeight- navHeight) {
-    $('div .home').removeClass('visible');
-    $('div .home').addClass('hiddHome');
-  } else if ($(this).scrollTop() == 0){
-    $('div .home').removeClass('hiddHome');
-
   }
 });
