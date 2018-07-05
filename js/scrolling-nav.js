@@ -95,6 +95,9 @@ $(window).scroll(function() {
   }
 });
 
-$('.navbar-nav a').on('click', function(){
-    $('.navbar-toggler').click() //bootstrap 3.x by Richard
+$('.collapse a').on('click', function(){
+  if($(".navbar-collapse").hasClass("show")){
+    $('.navbar-toggler').click()
+  }
+     //bootstrap 3.x by Richard
 });

@@ -128,7 +128,7 @@ nav{
   transition:visibility 1.5s linear,opacity 1.5s linear;
 }
 
-.py-5 {
-  padding-top: ($spacer * 2) !important;
-  padding-bottom: ($spacer * 2) !important;
+
+.navbar-toggler {
+  margin-right: 0px !important;
 }
