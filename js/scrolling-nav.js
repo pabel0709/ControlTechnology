@@ -61,7 +61,7 @@ $(window).scroll(function() {
 
 // Services section animation
 $(window).scroll(function() {
-  if ($(this).scrollTop() + navHeight > $('div .hiddServices').offset().top *0.9  ){
+  if ($(this).scrollTop() + navHeight > $('div .hiddServices').offset().top *0.91  ){
     $('div .hiddServices').addClass('visible');
   } else if ($(this).scrollTop() == 0){
     $('div .hiddServices').removeClass('visible');
