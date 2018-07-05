@@ -42,6 +42,7 @@ nav.navbar.shrink {
 nav{
   background: black;
   border-bottom: solid 1px white;
+  
   transition:0.8s;
   padding-right: 20px !important;
   /* keeps navbar in position while showing modalBoxes */
