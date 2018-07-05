@@ -1,8 +1,6 @@
-/* body{
-  overflow: hidden !important;
-} */
+
 .section {
-  padding: 150px 0;
+  padding: 10% 0;
   border-bottom: solid 2px darkgray;
 }
 #about{
@@ -44,7 +42,7 @@ nav.navbar.shrink {
 nav{
   background: black;
   border-bottom: solid 1px white;
-  transition:0.3s;
+  transition:0.8s;
   padding-right: 20px !important;
   /* keeps navbar in position while showing modalBoxes */
 }
@@ -69,8 +67,6 @@ nav{
 }
 .navbar-shrink{
   min-height: 35px;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
   font-size: 15px;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
@@ -130,4 +126,9 @@ nav{
 }
 .home{
   transition:visibility 1.5s linear,opacity 1.5s linear;
+}
+
+.py-5 {
+  padding-top: ($spacer * 2) !important;
+  padding-bottom: ($spacer * 2) !important;
 }

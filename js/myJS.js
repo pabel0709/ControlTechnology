@@ -6,9 +6,17 @@ function myMap() {
 }
 
 //  navbar hidden while bottom of page reached
+// window.onscroll = function() {scrollFunction()};
+// function scrollFunction() {
+//   if($(window).scrollTop() + $(window).height() > $(document).height()-40) {
+//     document.getElementById("navbar-top").style.top = "-60px"
+//   } else {
+//       document.getElementById("navbar-top").style.top = "-0";
+//     }
+// }
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  if($(window).scrollTop() + $(window).height() > $(document).height()-40) {
+  if($(window).scrollTop() + $(window).height() > $(document).height()-$('.footer').innerHeight()) {
     document.getElementById("navbar-top").style.top = "-60px"
   } else {
       document.getElementById("navbar-top").style.top = "-0";
