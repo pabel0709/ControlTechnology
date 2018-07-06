@@ -47,6 +47,7 @@ $(window).scroll(function() {
     $('div .home').addClass('hiddHome');
   } else if ($(this).scrollTop() < $('div .home .container').offset().top){
     $('div .home').removeClass('hiddHome');
+
   }
 });
 
@@ -58,6 +59,7 @@ $(window).scroll(function() {
     $('div .hiddAbout').removeClass('visible');
   }
 });
+
 
 // Services section animation
 $(window).scroll(function() {
@@ -99,5 +101,5 @@ $('.collapse a').on('click', function(){
   if($(".navbar-collapse").hasClass("show")){
     $('.navbar-toggler').click()
   }
-     //bootstrap 3.x by Richard
+     
 });
