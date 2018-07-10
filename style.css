@@ -1,9 +1,15 @@
-
+body{
+  font-family: cursive;
+}
 .section {
   padding:8% 0;
   border-bottom: solid 2px darkgray;
+}
+#navbar-top, #title {
+  font-family: 'Shadows Into Light', cursive;
 
 }
+
 #about{
   background: gray  ;
 
@@ -70,7 +76,7 @@ nav{
 }
 .navbar-shrink{
   min-height: 35px;
-  font-size: 15px;
+  font-size: 20px;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
 }
@@ -134,4 +140,8 @@ nav{
 
 .navbar-toggler {
   margin-right: 0px !important;
+}
+
+h1,h2,h3,h4{
+  font-family: 'Gaegu', cursive;
 }
