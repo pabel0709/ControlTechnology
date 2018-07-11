@@ -14,10 +14,13 @@ function myMap() {
 //       document.getElementById("navbar-top").style.top = "-0";
 //     }
 // }
+
 window.onscroll = function() {scrollFunction()};
+
 function scrollFunction() {
+  var navHeight = $('nav').innerHeight();
   if($(window).scrollTop() + $(window).height() > $(document).height()-$('.footer').innerHeight()) {
-    document.getElementById("navbar-top").style.top = "-80px"
+    document.getElementById("navbar-top").style.top = "-"+navHeight+"px";
   } else {
       document.getElementById("navbar-top").style.top = "-0";
     }

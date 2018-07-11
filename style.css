@@ -5,9 +5,13 @@ body{
   padding:8% 0;
   border-bottom: solid 2px darkgray;
 }
-#navbar-top, #title {
+#navbar-top {
   font-family: 'Kalam', cursive;
 
+}
+#navbar-top{
+  padding-top: 1 !important;
+  padding-bottom: 1 !important;
 }
 
 #about{
@@ -19,7 +23,7 @@ body{
 }
 #gallery{
   background: gray  ;
-  padding-top: 5% !important;
+
 }
 #contact{
   background: Moccasin  ;
@@ -52,6 +56,7 @@ nav{
   border-bottom: solid 1px white;
   transition:0.8s;
   padding-right: 20px !important;
+
   /* keeps navbar in position while showing modalBoxes */
 }
 
@@ -76,8 +81,9 @@ nav{
 .navbar-shrink{
   min-height: 35px;
   font-size: 19px;
-  padding-top: 15px !important;
-  padding-bottom: 15px !important;
+  transition:0.8s;
+  /* padding-top: 15px !important;
+  padding-bottom: 15px !important; */
 }
 .navbar-shrink img{
 width:189px;
