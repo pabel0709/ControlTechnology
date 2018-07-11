@@ -1,12 +1,12 @@
 body{
-  font-family: cursive;
+  font-family: 'Kalam', cursive;
 }
 .section {
   padding:8% 0;
   border-bottom: solid 2px darkgray;
 }
 #navbar-top, #title {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Kalam', cursive;
 
 }
 
@@ -143,5 +143,5 @@ nav{
 }
 
 h1,h2,h3,h4{
-  font-family: 'Gaegu', cursive;
+  font-family: 'Patrick Hand', cursive;
 }
