@@ -50,7 +50,6 @@ nav.navbar.shrink {
 nav{
   background: black;
   border-bottom: solid 1px white;
-
   transition:0.8s;
   padding-right: 20px !important;
   /* keeps navbar in position while showing modalBoxes */
@@ -76,9 +75,18 @@ nav{
 }
 .navbar-shrink{
   min-height: 35px;
-  font-size: 20px;
+  font-size: 19px;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
+}
+.navbar-shrink img{
+width:189px;
+height:80px;
+}
+nav img{
+  width:151px;
+  height:64px;
+  transition:0.8s;
 }
 
 .fade-scale {

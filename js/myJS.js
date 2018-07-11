@@ -17,7 +17,7 @@ function myMap() {
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if($(window).scrollTop() + $(window).height() > $(document).height()-$('.footer').innerHeight()) {
-    document.getElementById("navbar-top").style.top = "-60px"
+    document.getElementById("navbar-top").style.top = "-80px"
   } else {
       document.getElementById("navbar-top").style.top = "-0";
     }
