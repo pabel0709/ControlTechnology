@@ -1,6 +1,9 @@
 body{
   font-family: 'Kalam', cursive;
 }
+title {
+    display: none;
+}
 .section {
   padding:8% 0;
   border-bottom: solid 2px darkgray;
