@@ -110,9 +110,8 @@ nav img{
   overflow-y: auto;
   padding:0 !important;
 }
-
-.carousel-control-prev: hover{
-  background-color: red;
+.calousel-left{
+  padding:0 !important;
 }
 
 .hiddAbout {
